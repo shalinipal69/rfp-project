@@ -1,0 +1,22 @@
+{
+  "name": "rfp-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "prisma:migrate": "npx prisma migrate dev --name init --preview-feature",
+    "prisma:generate": "npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "4.16.0",
+    "cors": "^2.8.5",
+    "dotenv": "16.0.3",
+    "express": "4.18.2",
+    "groq-sdk": "^0.37.0",
+    "nodemailer": "6.9.4",
+    "openai": "4.12.0"
+  },
+  "devDependencies": {
+    "prisma": "4.16.0"
+  }
+}
