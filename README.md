@@ -104,6 +104,9 @@ cd your-project
 !-----------------------------------------------
 
 🛠️ Backend Setup
+
+cd .\backend\
+
 1️⃣ Install dependencies
 cd backend
 npm install
@@ -125,9 +128,17 @@ npx prisma migrate dev --name init
 4️⃣ Start backend
 node index.js
 
+extra Note : create sample ethereal smtp user and password run command in your backend folder
+node scripts/createEthereal.js
+
+extra Note : To test your groq model
+node test-groq-models.js
+
 Backend runs at:
 👉 http://localhost:4000
 
+Server running on port 4000
+✔ SMTP Connected Successfully, Ready to Send Emails!
 
 
 !------------------------------
